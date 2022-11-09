@@ -336,10 +336,6 @@ export default class App extends LitElement {
       color: hsla(var(--ig-secondary-200));
       background-color: transparent;
     }
-    .avatar_4::part(base) {
-      color: hsla(var(--ig-secondary-200));
-      background-color: transparent;
-    }
     .icon-button::part(base) {
       color: hsla(var(--ig-surface-500));
       background-color: hsla(var(--ig-secondary-400));
@@ -448,18 +444,6 @@ export default class App extends LitElement {
                   <div>
                     <p class="typography__subtitle-2 text_3">
                       EVENTS
-                    </p>
-                  </div>
-                </igc-list-item>
-                <igc-list-item @click=${() => this.settings?.toggle()}>
-                  <div slot="start">
-                    <igc-avatar size="small" shape="circle" class="avatar avatar_4">
-                      <span class="material-icons">settings</span>
-                    </igc-avatar>
-                  </div>
-                  <div>
-                    <p class="typography__subtitle-2 text_3">
-                      SETTINGS
                     </p>
                   </div>
                 </igc-list-item>
